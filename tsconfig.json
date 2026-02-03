@@ -17,6 +17,12 @@
     // "types": ["node"],
     // and npm install -D @types/node
 
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["/*"],
+      "@generated/*" : ["../generated/*"]
+    },
+
     // Other Outputs
     "sourceMap": true,
     "declaration": true,
