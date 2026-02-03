@@ -1,6 +1,9 @@
 import express, { type Request, type Response } from "express";
+import moviesRouter from "./routes/moviesRoutes";
 
 const app = express();
+
+app.use('/movies',moviesRouter);
 
 const PORT = 5001;
 
