@@ -20,10 +20,12 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["/*"],
-      "@generated/*" : ["../generated/*"],
-      "@routes/*" : ["./routes/*"],
-      "@controllers/*" : ["./controllers/*"],
+      "@generated/*": ["../generated/*"],
+      "@routes/*": ["./routes/*"],
+      "@controllers/*": ["./controllers/*"]
     },
+
+    "typeRoots": ["./types"],
 
     // Other Outputs
     "sourceMap": true,
