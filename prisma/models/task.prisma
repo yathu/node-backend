@@ -1,0 +1,9 @@
+model Tasks {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String?
+  user      User     @relation(fields: [userID], references: [id], onDelete: Cascade) //when user deleted all task gone
+  userID    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}

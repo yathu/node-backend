@@ -1,0 +1,8 @@
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String //can be null if ?
+  password  String
+  tasks     Tasks[] //define the relationship
+  createdAt DateTime @default(now())
+}
