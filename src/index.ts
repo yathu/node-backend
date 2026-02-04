@@ -1,9 +1,14 @@
 import express, { type Request, type Response } from "express";
-import moviesRouter from "./routes/moviesRoutes";
+import moviesRouter from "@routes/moviesRoutes";
+import authRouter from "@routes/authRouter";
 
 const app = express();
 
+app.use(express.json()); //for body
+app.use(express.urlencoded({ extended: true })); //for form field
+
 app.use("/movies", moviesRouter);
+app.use("/auth", authRouter);
 
 const PORT = 5001;
 

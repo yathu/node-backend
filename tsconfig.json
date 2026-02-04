@@ -20,7 +20,9 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["/*"],
-      "@generated/*" : ["../generated/*"]
+      "@generated/*" : ["../generated/*"],
+      "@routes/*" : ["./routes/*"],
+      "@controllers/*" : ["./controllers/*"],
     },
 
     // Other Outputs
